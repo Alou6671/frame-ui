@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { FramProvider } from "$lib";
+	import { FramProvider } from '$lib';
 </script>
 
-<FramProvider >
-    <slot />
+<FramProvider>
+	<slot />
 </FramProvider>
