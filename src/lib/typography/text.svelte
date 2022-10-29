@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { FontWeight, Margin, LineHeight } from '$lib/types';
+	import type { FontWeight, Size, LineHeight } from '$lib/types';
 
-	export let margin: Margin = '0px';
+	export let margin: Size = '0px';
 	export let fontFamily: string = "'Poppins', sans-serif";
 	export let fontWeight: FontWeight = 300;
 	export let lineHeight: LineHeight = 1.5;
