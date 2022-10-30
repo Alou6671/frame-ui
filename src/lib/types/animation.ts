@@ -34,15 +34,15 @@ class Animation {
 		}
 	}
 
-	readonly name: string | undefined;
-	readonly duration: Time | undefined;
-	readonly timingFunction: AnimationTimingFunction | undefined;
-	readonly delay: Time | undefined;
-	readonly direction: AnimationDirection | undefined;
-	readonly iterationCount: AnimationIterationCount | undefined;
-	readonly fillMode: AnimationFillMode | undefined;
-	readonly playState: AnimationPlayState | undefined;
-	readonly timeline: AnimationTimeline | undefined;
+	private readonly name: string | undefined;
+	private readonly duration: Time | undefined;
+	private readonly timingFunction: AnimationTimingFunction | undefined;
+	private readonly delay: Time | undefined;
+	private readonly direction: AnimationDirection | undefined;
+	private readonly iterationCount: AnimationIterationCount | undefined;
+	private readonly fillMode: AnimationFillMode | undefined;
+	private readonly playState: AnimationPlayState | undefined;
+	private readonly timeline: AnimationTimeline | undefined;
 
 	public get cssValue(): string {
 		return [

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Div } from '$lib';
 	import { Animation } from '../lib/types';
 
 	const anim: Animation = new Animation({
@@ -6,7 +7,6 @@
 		duration: '4s',
 		iterationCount: 'infinite'
 	});
-	console.log(anim.cssValue);
 </script>
 
 <svelte:head>
@@ -22,8 +22,14 @@
 	</style>
 </svelte:head>
 
-<div class="center" style="animation: {anim.cssValue};">
-	<p>test</p>
+<div style="display: flex; flex-direction: row;">
+	<Div justifyContent="center" display="flex" width="100px" height="100px" animation={anim}>
+		<p>test</p>
+	</Div>
+
+	<div class="center" style="animation: {anim.cssValue};">
+		<p>test</p>
+	</div>
 </div>
 
 <style>
